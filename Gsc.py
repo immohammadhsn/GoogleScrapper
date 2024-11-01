@@ -4,6 +4,9 @@ from selenium.webdriver.edge.service import Service
 import time
 import re
 
+#this scrapper using edge broser
+#download the driver: https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/?form=MA13LH#downloads
+
 # Define Edge WebDriver path
 service = Service(r'E:/projects/python/GoogleScrapper/edgedriver_win64/msedgedriver.exe')  # Adjust to your Edge WebDriver path
 options = webdriver.EdgeOptions()
@@ -39,6 +42,9 @@ print(df.columns)
 # Add new columns for latitude and longitude, defaulting to None
 df['latitude'] = None
 df['longitude'] = None
+
+
+#here we should split the task to make it faster for us:
 
 # Loop through each URL in the DataFrame and extract coordinates
 for index, row in df.iterrows():
