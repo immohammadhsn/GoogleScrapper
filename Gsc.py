@@ -18,7 +18,7 @@ driver = webdriver.Edge(service=service, options=options)
 # Function to extract latitude and longitude
 def extract_lat_long(url):
     driver.get(url)
-    time.sleep(4)  # Give some time for the page to load fully
+    time.sleep(3)  # Give some time for the page to load fully
 
     # Get the updated URL after the page loads
     current_url = driver.current_url
