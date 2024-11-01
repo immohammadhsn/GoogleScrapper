@@ -5,7 +5,9 @@ import time
 import re
 
 #this scrapper using edge broser
-#download the driver: https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/?form=MA13LH#downloads
+#1. download the driver: https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/?form=MA13LH#downloads
+#2. adjust the paths with corrected one
+#3. run command ./run.bat
 
 # Define Edge WebDriver path
 service = Service(r'E:/projects/python/GoogleScrapper/edgedriver_win64/msedgedriver.exe')  # Adjust to your Edge WebDriver path
